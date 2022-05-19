@@ -1,3 +1,7 @@
+@import url("nav.css");
+
+
+
 /* Media Queries */
 @media (min-width: 576px) /* for mobile */{}
 @media (min-width:768px) /* for tablets */{}
