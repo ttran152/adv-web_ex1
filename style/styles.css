@@ -1,3 +1,5 @@
-@charset "UTF-8";
-/* CSS Document */
-
+/* Media Queries */
+@media (min-width: 576px) /* for mobile */{}
+@media (min-width:768px) /* for tablets */{}
+@media (min-width: 992px) /* for laptops */{}
+@media (min-width: 1200px) /* for large devices */{}
