@@ -55,7 +55,8 @@ header {
 }
 header ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-size: 0.6rem;
 }
 header ul li a:hover {
   color: orange;
@@ -191,6 +192,10 @@ footer {
   color: #575757;
   padding-bottom: 1rem;
 }
+.footer-container {
+  width: 80.5%;
+  margin: 0 auto;
+}
 footer h2 {
   margin-bottom: 0;
 }
@@ -231,9 +236,7 @@ footer .email button:hover {
   color: black;
 }
 /* Media Queries */
-@media (min-width: 576px) /* for mobile */ {
-}
-@media (max-width: 768px) /* for tablets */ {
+@media (min-width: 375px) and (max-width: 768px) /* for mobile */ {
   .menu-button-container {
     display: flex;
   }
@@ -267,67 +270,122 @@ footer .email button:hover {
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    background-color: #222;
+    background-color: #c1c1c1;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+  /* Hidden content */
   .socialmedia,
-  .gallery,
-  .socialmedia {
+  .gallery {
     display: none;
   }
 }
+@media (min-width: 576px) /* for mobile */ {
+  body {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .hero-content {
+    width: 14rem;
+  }
+  .promo-content {
+    padding: 2rem 0 2rem 20rem;
+  }
+}
+@media (min-width: 768px) /* for tablets */ {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+    .promo-content {
+    padding: 4rem 0 4rem 24rem;
+  }
+}
 @media (min-width: 992px) /* for laptops */ {
-    .menu-button-container {
-        display: flex;
-      }
-      .menu {
-        position: absolute;
-        top: 0;
-        margin-top: 50px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-      }
-      #menu-toggle ~ .menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      #menu-toggle:checked ~ .menu li {
-        border: 1px solid #333;
-        height: 2.5em;
-        padding: 0.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      .menu > li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0.5em 0;
-        width: 100%;
-        color: white;
-        background-color: #222;
-      }
-      .menu > li:not(:last-child) {
-        border-bottom: 1px solid #444;
-      }
-    .container {
-        width: 72.9%;
-        margin: 0 auto;
-      }
+  .container {
+    width: 80.7%;
+  }
+  /* Change font sizes */
+  footer h4 {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3,
+  label,
+  footer h2 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  /* Change navbar */
   header ul li a {
     color: black;
   }
+  /* Change hero content */
+  .hero-content {
+    width: 20.5rem;
+    padding: 4.5rem 3rem;
+  }
+  /* Change footer */
+  .footer-container {
+    width: 66%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .address {
+    display: block;
+  }
+  form {
+    text-align: left;
+  }
+  #mail {
+    width: 19.5rem;
+    height: 1.25rem;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+  button {
+    height: 1.25rem;
+  }
+  /* Hidden content */
   .location,
   .promo {
     display: none;
   }
+  /* Shown content */
+  .menu-icon {
+    display: inline;
+  }
+  .socialmedia,
+  .gallery {
+    display: flex;
+  }
 }
 @media (min-width: 1200px) /* for large devices */ {
+  header ul li a{
+    font-size: 1rem;
+  }
+  .hero-content {
+    width: 30rem;
+  }
 }
